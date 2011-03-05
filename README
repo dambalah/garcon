@@ -1,7 +1,25 @@
-Garçon : SproutCore build tools using node.js.
+Garçon: SproutCore build tools using node.js
 
-1. Install node.js (http://nodejs.org/, http://github.com/ry/node)
 
-2. Create a configuration file for your application based on the sample sample_server_config.js file
+Requirements:
 
-3. Start the server with `node myApp.js`
+* node.js
+    http://nodejs.org/
+
+* SproutCore
+    gem install sproutcore
+
+
+Steps:
+
+* Create a new SproutCore application
+    sproutcore init myapp; cd myapp
+
+* Clone garçon
+    git clone --recursive git://github.com/martoche/garcon.git
+
+* Clone SproutCore
+    git clone git://github.com/sproutcore/sproutcore.git frameworks/sproutcore
+
+* Customize the config file if needed, then start garçon
+    node garcon/sample_server_config.js
